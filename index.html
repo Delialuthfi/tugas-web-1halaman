@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Perkebunan Ardelia</title>
+    <style>
+        /* ======== DESAIN TEMA PERKEBUNAN AESTHETIC ======== */
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f1f8e9; /* hijau muda lembut */
+            color: #3e2723; /* coklat tanah */
+            margin: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e7d32; /* hijau daun */
+            background-color: #dcedc8; /* hijau pastel lembut */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #6d4c41; /* coklat batang pohon */
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #8d6e63;
+        }
+
+        #pesan {
+            margin-top: 25px;
+            font-weight: bold;
+            text-align: center;
+            color: #2e7d32;
+            font-size: 17px;
+        }
+
+        #nama {
+            text-align: center;
+            color: #5d4037;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .kontainer {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .tombol {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selamat Datang di Website Perkebunan 🌱</h1>
+
+    <div class="kontainer">
+        <p>
+            Website ini dibuat untuk memperkenalkan dunia perkebunan yang asri dan penuh kehidupan.
+            Di sini, kamu bisa menemukan berbagai informasi menarik seputar tanaman, teknik penanaman modern,
+            hingga cara menjaga kesuburan tanah agar hasil panen lebih melimpah.
+        </p>
+
+        <p>
+            Perkebunan tidak hanya berperan sebagai sumber pangan, tapi juga sebagai penjaga keseimbangan ekosistem.
+            Melalui penerapan sistem pertanian berkelanjutan dan pemanfaatan teknologi, kita bisa menciptakan
+            lingkungan yang hijau sekaligus produktif.
+        </p>
+
+        <p>
+            Klik tombol di bawah ini untuk menampilkan waktu saat ini, waktu menjadi pengingat bahwa setiap musim dan waktu
+            memiliki perannya sendiri dalam proses menanam dan tumbuh 🌾.
+        </p>
+
+        <div class="tombol">
+            <button onclick="tampilkanWaktu()">Tampilkan Waktu Sekarang</button>
+            <div id="pesan"></div>
+            <div id="nama"></div>
+        </div>
+    </div>
+
+    <script>
+        // ======== JAVASCRIPT INTERAKSI ========
+        function tampilkanWaktu() {
+            let sekarang = new Date();
+            document.getElementById("pesan").innerHTML =
+                "⏰ Waktu saat ini: " + sekarang.toLocaleString();
+            document.getElementById("nama").innerHTML =
+                "Ardelia Luthfiani - TIF RP 23 CNS B";
+        }
+    </script>
+
+</body>
+</html>
